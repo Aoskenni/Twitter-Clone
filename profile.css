@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-red: #ff0000;
+    --color-buttons: #7856FF;
+    --transparent: transparent;
+    --color-light-grey: rgb(113, 118, 123);
+    --color-green: rgb(0, 128, 0);
+    --color-pink: rgb(170, 10, 37);
+    --color-blue: rgb(0, 0, 255);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: 'Roboto', sans-serif;;
+    overflow-x: hidden;
+    border: none;
+    width: 100%;
+}
+main {
+    position: relative;
+    top: 0;
+
+}
+main .grid-container {
+    display: grid;
+    grid-template-columns: 16.3vw auto 33vw;
+    /*border: 1px solid red;*/
+    position: relative;
+    height: 310vh;
+    
+    
+}
+
+/*===LEFT GRID START===*/
+main .grid-container .left {
+    /*border: 1px solid purple;*/
+    position: sticky;
+}
+.left-container {
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    overflow: auto;
+}
+main .grid-container .left .left-container a button #logo {
+    height: 45px;
+    width: 100%;
+}
+main .grid-container .left .left-container a .post {
+    height: 55px;
+    width: 55px;
+    background: var(--color-buttons);
+}
+main .grid-container .left .left-container a .post:hover {
+    background: var(--color-buttons);
+}
+main .grid-container .left .left-container a button {
+    background: var(--transparent);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    padding: 0 2px;
+}
+main .grid-container .left .left-container a button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+main .grid-container .left .left-container a button #icon {
+    height: 30px;
+    width: 65%;
+}
+
+#profile-icon {
+    height: 40px;
+    width: 70%;
+    border-radius: 50%;
+}
+main .grid-container .left .left-container a .profile-btn {
+    height: 60px;
+    width: 60px;
+}
+main .grid-container .left .left-container a {
+    margin-left: 125px;
+}
+main .grid-container .left .left-container a:nth-of-type(13) {
+    margin-top: 15px;
+}
+main .grid-container .left .left-container a:nth-of-type(2) {
+    position: relative;
+}
+main .grid-container .left .left-container a button:nth-of-type(1) {
+    position: relative;
+}
+main .grid-container .left .left-container a:nth-of-type(4) {
+    position: relative;
+}
+main .grid-container .left .left-container a button:nth-of-type(3) {
+    position: relative;
+}
+main .grid-container .left .left-container a:nth-of-type(5) {
+    position: relative;
+}
+main .grid-container .left .left-container a button:nth-of-type(4) {
+    position: relative;
+}
+.fullstop {
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    background: var(--color-buttons);
+    position: absolute;
+    top: 11px;
+    left: 30px;
+}
+main .grid-container .left .left-container a button small {
+    color: var(--color-buttons);
+    font-weight: 700;
+    position: absolute;
+    top: 11px;
+}
+/*===LEFT GRID ENDS===*/
+
+/*===MIDDLE GRID START===*/
+main .grid-container .middle {
+    
+    /*border: 1px solid purple;*/
+    position: relative;
+    border-right: 1px solid var(--color-light-grey);
+    height: 310vh;
+   
+
+}
+.nav-container {
+    display: flex;
+    position: fixed;
+    background: rgba(0, 0, 0, 1);
+    z-index: 1;
+    width: 50%;
+    /*border-bottom: 1px solid red;*/
+}
+.nav-container > div {
+    margin-left: 50px;
+    margin-top: 2px;
+}
+.nav-container > div > small {
+    color: #585f63;
+}
+.nav-container > i {
+    margin-top: 17px;
+    margin-left: 25px;
+}
+.background-container {
+    position: relative;
+    margin-top: 45px;
+    height: 300px;
+}
+.background {
+    height: 210px;
+    background: #333639;
+    margin-top: 45px;
+}
+#profile-profile {
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    left: 20px;
+    top: 140px;
+    border: 4px solid black;
+}
+.img-a > button {
+    margin-left: 450px;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    width: 120px;
+    background: var(--color-black);
+
+}
+.img-a > button:hover {
+    background: rgba(63, 60, 60, 0.4);
+}
+.img-a > button > a {
+    color: white;
+    font-weight: 600;
+} 
+.username {
+    margin-left: 25px;
+}
+.description {
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.join-date {
+    margin-left: 25px;
+    margin-top: 15px;
+    color: #585f63;
+}
+.username > small {
+    color: #585f63;
+}
+.followers-following {
+    margin-left: 25px;
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+.followers-following > span > a {
+    color: #585f63;
+}
+.nav2 {
+    /*border: 1px solid red;*/
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid var(--color-light-grey);
+    
+}
+.nav2 > button {
+    /*border: 1px solid blue;*/
+    padding: 20px 35px;
+    background: var(--color-black)   
+}
+.nav2 > button > a {
+    color: var(--color-light-grey);
+    font-weight: 600;
+    font-size: 14px;
+}
+.nav2 > button > a:active {
+    color: white;
+}
+.nav2 > button:hover {
+    background: rgba(63, 60, 60, 0.4);
+}
+.who-follow {
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.who-follow > span {
+    font-size: 20px;
+    font-weight: 700;
+}
+#profile-pics {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.profile-pics {
+    margin-left: 25px;
+    position: relative;
+    /*border: 1px solid green;*/
+}
+.follow-section {
+    display: flex;
+     margin-top: 40px;
+}
+.profile-pics > i {
+    position: absolute;
+    top: -15px;
+    left: 33px;
+}
+.profile-pics > a > small {
+    position: absolute;
+    top: -15px;
+    left: 60px;
+     /*border: 1px solid green;*/
+     width: 110px;
+     color:#959595;
+     font-weight: 600;
+}
+.profile-details {
+    /*border: 1px solid yellow;*/
+    margin-left: 15px;
+    line-height: 25px;
+}
+.profile-details > a > h3 {
+    font-size: 14px;
+}
+.profile-details > a > small {
+    font-size: 14px;
+    color: var(--color-light-grey);
+}
+.profile-details > a:hover {
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+.profile-details > p {
+    font-size: 15px;
+}
+.follow-section > button {
+    height: 35px;
+    width: 90px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.follow-section > button > a {
+    color: #000000;
+    font-weight: 600;
+}
+.show-more {
+    margin-top: 20px;
+    margin-left: 25px;
+}
+/*===MIDDLE GRID ENDS*/
+/*RIGHT GRID STARTS*/
+main .grid-container .right {
+    /*border: 1px solid green;*/
+    position: sticky;
+    top: 0;
+    height: 300vh;
+    
+}
+/*.right-container {
+    border: 1px solid blue;
+}*/
+.bar-container {
+    position: fixed;
+    background: rgba(0, 0, 0, 1);
+    /*border: 1px solid red;*/
+}
+.search-bar {
+    position: relative;
+    margin-left: 25px;
+   /*border: 1px solid green;*/
+    
+
+}
+#search {
+    height: 43px;
+    width: 320px;
+    padding-left: 46px;
+    font-size: 20px;
+    border-radius: 20px;
+    background: #16181C;
+    color: #ffffff;
+    outline: none;
+    margin-top: 6px;
+}
+#search:focus {
+    border: 1px solid var(--color-buttons);
+}
+.search-right {
+    position: absolute;
+    left: 15px;
+    top: 21px;
+}
+input::placeholder {
+    font-size: 15px;
+}
+.subscribe {
+    margin-top: 65px;
+    margin-left: 25px;
+    width: 300px;
+    background: #16181C;
+    padding: 10px;
+    border-radius: 12px;
+    /*border: 1px solid yellow;*/
+
+}
+.follow {
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 300px;
+    background: #16181C;
+    border-radius: 12px;
+    padding: 10px;
+}
+.follow > span {
+    font-size: 18px;
+    font-weight: 700;
+}
+#follow-photo {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+.follow-content {
+    display: flex;
+    margin-top: 12px;
+}
+.follow-content:hover {
+    background: #202327;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+}
+.follow-btn {
+    margin-left: 80px;
+    margin-top: 10px;
+}
+#follow-btn {
+    height: 35px;
+    width: 80px;
+    border-radius: 20px;
+}
+#follow-btn > a {
+    color: #000000;
+    font-weight: 700;
+}
+.follow-profile {
+    margin-top: 10px;
+    margin-left: 12px;
+}
+.follow > .follow-content > .follow-profile > span {
+    font-weight: 700;
+}
+.follow > .follow-content > .follow-profile > span:hover {
+    text-decoration: underline;
+}
+.follow > .follow-content > .follow-profile > p {
+    color: var(--color-light-grey);
+    font-size: 14px;
+} 
+.follow-content > a {
+    padding: 15px 0;
+}
+.trends {
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 300px;
+    background: #16181C;
+    border-radius: 12px;
+    padding: 10px;
+}
+.trends-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.trends > .trends-content > span {
+    font-weight: 700;
+}
+.trends-content {
+    line-height: 22px;
+}
+.trends > .trends-content > .trends-hover > .trends-flex > span {
+    font-size: 13px;
+    color: var(--color-light-grey);
+}
+.trends > .trends-content > .trends-hover > div > small {
+    color: var(--color-light-grey);
+}
+.trends > .trends-content > .trends-hover > .trends-flex > small {
+    font-size: 20px;
+}
+.trends > .trends-content > .trends-hover > .trends-flex > small:hover {
+    color: blue;
+}
+.trends > .trends-content > .trends-hover > div > span {
+    font-weight: 700;
+}
+.trends-hover:hover {
+    background: #202327;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+}
+.trend-btn {
+    padding: 10px 0;
+    
+}
+.like {
+    margin-top: 70px;
+    margin-left: 25px;
+    width: 300px;
+    background: #16181C;
+    border-radius: 12px;
+    padding: 10px;
+}
+.like > span {
+    font-size: 18px;
+    font-weight: 700;
+}
+#like-photo {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+.like-content {
+    display: flex;
+    margin-top: 12px;
+}
+.like-content:hover {
+    background: #202327;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+}
+.like-btn {
+    margin-left: 80px;
+    margin-top: 10px;
+}
+#like-btn {
+    height: 35px;
+    width: 80px;
+    border-radius: 20px;
+}
+#like-btn > a {
+    color: #000000;
+    font-weight: 700;
+}
+.like-profile {
+    margin-top: 10px;
+    margin-left: 12px;
+}
+.like > .like-content > .like-profile > span {
+    font-weight: 700;
+}
+.like > .like-content > .like-profile > span:hover {
+    text-decoration: underline;
+}
+.like > .like-content > .like-profile > p {
+    color: var(--color-light-grey);
+    font-size: 14px;
+} 
+.like-content > a {
+    padding: 15px 0;
+}
+.divider {
+    border-top: 1px solid rgb(44, 44, 44);
+    border-bottom: none;
+    width: 315px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.footer {
+    margin-left: 40px;
+    width: 305px;
+    margin-top: 20px;
+    text-align: center;
+    height: 22vh;
+}
+.footer > a {
+    font-size: 13px;
+    margin-left: 5px;
+    color: var(--color-light-grey);
+}
+.footer > a:hover {
+    text-decoration: underline;
+    
+}

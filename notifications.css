@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-red: #ff0000;
+    --color-buttons: #7856FF;
+    --transparent: transparent;
+    --color-light-grey: rgb(113, 118, 123);
+    --color-green: rgb(0, 128, 0);
+    --color-pink: rgb(170, 10, 37);
+    --color-blue: rgb(0, 0, 255);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: 'Roboto', sans-serif;;
+    overflow-x: hidden;
+    border: none;
+    width: 100%;
+}
+main {
+    position: relative;
+    top: 0;
+
+}
+main .grid-container {
+    display: grid;
+    grid-template-columns: 16.3vw auto 33vw;
+    /*border: 1px solid red;*/
+    position: relative;
+    height: max-content;
+    
+    
+}
+
+/*===LEFT GRID START===*/
+main .grid-container .left {
+    /*border: 1px solid purple;*/
+    position: sticky;
+}
+.left-container {
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    overflow: auto;
+}
+main .grid-container .left .left-container a button #logo {
+    height: 45px;
+    width: 100%;
+}
+main .grid-container .left .left-container a .post {
+    height: 55px;
+    width: 55px;
+    background: var(--color-buttons);
+}
+main .grid-container .left .left-container a .post:hover {
+    background: var(--color-buttons);
+}
+main .grid-container .left .left-container a button {
+    background: var(--transparent);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    padding: 0 2px;
+}
+main .grid-container .left .left-container a button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+main .grid-container .left .left-container a button #icon {
+    height: 30px;
+    width: 65%;
+}
+
+#profile-icon {
+    height: 40px;
+    width: 70%;
+    border-radius: 50%;
+}
+main .grid-container .left .left-container a .profile-btn {
+    height: 60px;
+    width: 60px;
+}
+main .grid-container .left .left-container a {
+    margin-left: 125px;
+}
+main .grid-container .left .left-container a:nth-of-type(13) {
+    margin-top: 15px;
+}
+main .grid-container .left .left-container a:nth-of-type(2) {
+    position: relative;
+}
+main .grid-container .left .left-container a button:nth-of-type(1) {
+    position: relative;
+}
+main .grid-container .left .left-container a:nth-of-type(4) {
+    position: relative;
+}
+main .grid-container .left .left-container a button:nth-of-type(3) {
+    position: relative;
+}
+main .grid-container .left .left-container a:nth-of-type(5) {
+    position: relative;
+}
+main .grid-container .left .left-container a button:nth-of-type(4) {
+    position: relative;
+}
+.fullstop {
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    background: var(--color-buttons);
+    position: absolute;
+    top: 11px;
+    left: 30px;
+}
+main .grid-container .left .left-container a button small {
+    color: var(--color-buttons);
+    font-weight: 700;
+    position: absolute;
+    top: 11px;
+}
+/*===LEFT GRID ENDS===*/
+
+/*===MIDDLE GRID START===*/
+main .grid-container .middle {
+    
+    /*border: 1px solid purple;*/
+    position: relative;
+    border-right: 1px solid var(--color-light-grey);
+    height: 350vh;
+   
+
+}
+.nav-container {
+    border-bottom: 1px solid var(--color-light-grey);
+    position: fixed;
+    background: rgba(0, 0, 0, 1);
+    border-right: 1px solid var(--color-light-grey);
+    /*border: 1px solid blue;*/
+}
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    /*border: 1px solid red;*/
+    
+
+}
+.nav-setting {
+    background: var(--color-black);
+    border: none;
+    margin-right: 15px;
+}
+.nav1 > span {
+    margin-left: 15px;
+}
+.buttons-nav {
+    height: 65px;
+    width: 200px;
+    background: var(--transparent);
+    
+}
+.buttons-nav > a {
+    color: var(--color-light-grey);
+    font-weight: 600;
+    font-size: 15px;
+}
+.buttons-nav:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+.buttons-nav > a:active {
+    color: var(--color-white);
+}
+.nav2 {
+    margin-top: 15px;
+}
+.group-flex {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.group-flex > span {
+    margin-left: 78px;
+    font-size: 14px;
+    color: var(--color-light-grey);
+}
+.group-flex > small {
+    margin-right: 15px;
+    font-size: 20px;
+    color: var(--color-light-grey);
+    margin-top: -10px;
+
+}
+.notifications-container > div > img {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+.notifications-container > i {
+    margin-top: 12px;
+}
+.notifications-container {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 32px;
+    gap: 12px;
+}
+.notification-content {
+    margin-left: 75px;
+    margin-top: 10px;
+}
+.notification-content > span {
+    
+} 
+.notification-content > p {
+   line-height: 40px;
+   color: var(--color-light-grey);
+}
+.divider-notification {
+    border-top: 1px solid var(--color-light-grey);
+}
+#notification-logo {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+}
+.logo-flex {
+    display: flex;
+    margin-top: 10px;
+    margin-left: px;
+    border-top: 1px solid var(--color-light-grey);
+    border-bottom: 1px solid var(--color-light-grey);
+    
+}
+.logo-flex > span {
+    margin-right: 50px;
+    margin-top: 7px;
+}
+.logo-flex > span > a {
+    color: white;
+}
+
+/*===MIDDLE GRID ENDS*/
+/*RIGHT GRID STARTS*/
+main .grid-container .right {
+    /*border: 1px solid green;*/
+    position: sticky;
+    top: 0;
+    height: max-content;
+    
+}
+/*.right-container {
+    border: 1px solid blue;
+}*/
+.bar-container {
+    position: fixed;
+    background: rgba(0, 0, 0, 1);
+    margin-left: 10px;
+    /*border: 1px solid red;*/
+}
+.search-bar {
+    position: relative;
+    margin-left: 10px;
+   /*border: 1px solid green;*/
+    
+
+}
+#search {
+    height: 43px;
+    width: 320px;
+    padding-left: 46px;
+    font-size: 20px;
+    border-radius: 20px;
+    background: #16181C;
+    color: #ffffff;
+    outline: none;
+    margin-top: 6px;
+}
+#search:focus {
+    border: 1px solid var(--color-buttons);
+}
+.search-right {
+    position: absolute;
+    left: 15px;
+    top: 21px;
+}
+input::placeholder {
+    font-size: 15px;
+}
+
+.trends {
+    margin-top: 70px;
+    margin-left: 25px;
+    width: 300px;
+    background: #16181C;
+    border-radius: 12px;
+    padding: 10px;
+}
+.trends-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.trends > .trends-content > span {
+    font-weight: 700;
+}
+.trends-content {
+    line-height: 22px;
+}
+.trends > .trends-content > .trends-hover > .trends-flex > span {
+    font-size: 13px;
+    color: var(--color-light-grey);
+}
+.trends > .trends-content > .trends-hover > div > small {
+    color: var(--color-light-grey);
+}
+.trends > .trends-content > .trends-hover > .trends-flex > small {
+    font-size: 20px;
+}
+.trends > .trends-content > .trends-hover > .trends-flex > small:hover {
+    color: blue;
+}
+.trends > .trends-content > .trends-hover > div > span {
+    font-weight: 700;
+}
+.trends-hover:hover {
+    background: #202327;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+}
+.trend-btn {
+    padding: 10px 0;
+    
+}
+.follow {
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 300px;
+    background: #16181C;
+    border-radius: 12px;
+    padding: 10px;
+}
+.follow > span {
+    font-size: 18px;
+    font-weight: 700;
+}
+#follow-photo {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+.follow-content {
+    display: flex;
+    margin-top: 12px;
+}
+.follow-content:hover {
+    background: #202327;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+}
+.follow-btn {
+    margin-left: 80px;
+    margin-top: 10px;
+}
+#follow-btn {
+    height: 35px;
+    width: 80px;
+    border-radius: 20px;
+}
+#follow-btn > a {
+    color: #000000;
+    font-weight: 700;
+}
+.follow-profile {
+    margin-top: 10px;
+    margin-left: 12px;
+}
+.follow > .follow-content > .follow-profile > span {
+    font-weight: 700;
+}
+.follow > .follow-content > .follow-profile > span:hover {
+    text-decoration: underline;
+}
+.follow > .follow-content > .follow-profile > p {
+    color: var(--color-light-grey);
+    font-size: 14px;
+} 
+.follow-content > a {
+    padding: 15px 0;
+}
+.divider {
+    border-top: 1px solid rgb(44, 44, 44);
+    border-bottom: none;
+    width: 315px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.footer {
+    margin-left: 40px;
+    width: 305px;
+    margin-top: 20px;
+    text-align: center;
+    height: 22vh;
+}
+.footer > a {
+    font-size: 13px;
+    margin-left: 5px;
+    color: var(--color-light-grey);
+}
+.footer > a:hover {
+    text-decoration: underline;
+    
+}
+
+/*===========POST POPUP SECTION STARTS===================*/
+
+.modal {
+    /*border: 1px solid white;*/
+    height: 330px;
+    top: 40px;
+    width: 650px;
+    border-radius: 15px;
+   
+    left: 270px;
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0,0,0,1);
+}
+.hidden {
+     visibility: hidden;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(36,45,52,0.5);
+    backdrop-filter: blur();
+    z-index: 1;
+  }
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.nav-content > .closePopup {
+    margin-left: 20px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: #000000;
+    border: none;
+
+    /*border: 1px solid yellow;*/
+}
+.nav-content > .closePopup:hover {
+    background: rgba(60, 60, 60, 0.4);
+}
+
+.nav-content > .drafts {
+    height: 30px;
+    width: 80px;
+    margin-right: 25px;
+    background: black;
+    border-radius: 20px;
+    border: none;
+}
+.nav-content > .drafts:hover {
+    background: rgba(120, 86, 255, 0.2);
+}
+.nav-content > .drafts > a {
+    color: rgb(120, 86, 255);
+    font-weight: 600;
+    text-decoration: none;
+} 
+
+.post-popup1 {
+    display: flex;
+    margin-left: 20px;
+    /*border: 1px solid red;*/
+}
+.post-popup1 a button {
+    height: 25px;
+    width: 100%;
+    margin-top: 8px;
+    margin-left: 15px;
+    padding: 5px 4px;
+    border-radius: 10px;
+    background: var(--transparent);
+    color: var(--color-buttons);
+    border: 1px solid var(--color-light-grey);
+}
+.post-popup1 a button:hover {
+    background: rgba(120, 86, 255, 0.1);
+}
+.post-popup1 #profile-popup {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    margin-top: 20px;
+}
+.modal .popup-content .write-something textarea  {
+    margin-left: 80px;
+    height: 30px;
+    width: 86%;
+    background: var(--transparent);
+    border: none;
+    resize: none;
+    color: var(--color-white);
+}
+.modal .popup-content textarea:focus {
+    outline: none;
+}
+::placeholder {
+    font-size: 20px;
+}
+.modal .popup-content .global-options {
+    margin-left: 10px;
+    /*border: 1px solid green;*/
+    margin-right: 20px;
+    border-bottom: 1px solid var(--color-light-grey);
+    height: 35px;
+    margin-top: 92px;
+}
+.modal .popup-content .global-options button {
+    height: 22px;
+    width: 30%;
+    background: var(--transparent);
+    color: var(--color-buttons);
+    border: none;
+    border-radius: 10px;
+    margin-top: ;   
+}
+.modal .popup-content .global-options button:hover {
+    background: rgba(120, 86, 255, 0.15);
+}
+.modal .popup-content .icon-post {
+    display: flex;
+    /*border: 1px solid green;*/
+    margin-left: 40px;
+    gap: 20px;
+    margin-top: 10px;
+}
+.modal .popup-content .icon-post .gi {
+    border: 1px solid var(--color-buttons);
+    width: 100%;
+    
+
+}
+.modal .popup-content .icon-post a .gif {
+    font-size: 8px;
+    border: 1.5px solid var(--color-buttons);
+    padding: 1.5px 0;
+    color: var(--color-buttons);
+    margin-top: 8px;
+}
+.modal .popup-content .icon-post a i {
+    color: var(--color-buttons);
+    margin-top: 8px;
+}
+.modal .popup-content .icon-post a .post-btn {
+    margin-left: 210px;
+    height: 38px;
+    width: 30%;
+    border-radius: 20px;
+    border: none;
+    background: var(--color-buttons); 
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 14px;
+}
+.modal .popup-content .icon-post a .post-btn:hover {
+    background: rgb(120, 86, 255, 0.9);
+}

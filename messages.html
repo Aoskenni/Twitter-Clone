@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="messages.css">
+    <script src="https://kit.fontawesome.com/dfedbc289c.js" crossorigin="anonymous"></script>
+    <script src="messages.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+
+
+<!---------POST POPUP STARTS---------->
+<div class="overlay hidden"></div>
+<div class="modal hidden" id="popup">
+<div class="popup-content">
+    <div class="nav-content">
+        <button id="closePopup" class="closePopup btn-close" onclick="closePopup()"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+        <button class="drafts"><a href="">Drafts</a></button>
+    </div>
+    <div class="post-popup1">
+        <img src="media/Profile.jpg" alt="" id="profile-popup">
+        <a href=""><button>Everyone <i class="fa-solid fa-chevron-down"></i></button></a>
+    </div>
+    <div class="write-something">
+        <textarea name="" id="" cols="60" rows="2" placeholder="What is happening?!"></textarea>
+    </div>
+    <div class="global-options">
+        <button><i class="fa-solid fa-earth-americas"></i>  Everyone can reply</button>
+    </div>
+    <div class="icon-post">
+        <a href=""><i class="fa-regular fa-image"></i></a>
+        <a href=""><div class="gif">GIF</div></a>
+        <a href=""><i class="fa-solid fa-square-poll-horizontal"></i></a>
+        <a href=""><i class="fa-regular fa-face-smile"></i></a>
+        <a href=""><i class="fa-regular fa-calendar-plus"></i></a>
+        <a href=""><i class="fa-solid fa-location-dot"></i></a>
+        <a href=""><button class="post-btn">Post</button></a>
+    </div>
+</div>
+</div>
+<!---------POST POPUP ENDS-------------------->
+
+
+        <div class="grid-container"> 
+            <!--GRID COLUMN LEFT START-->
+            <div class="left">
+                <div class="left-container">
+                    <a href="dashboard.html"><button><img src="media/twitter-logo.png" alt="" id="logo"></button></a>
+                    <a href=""><button><i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i><div class="fullstop"></div></button></a>
+                    <a href=""><button><i class="fa-solid fa-magnifying-glass fa-xl search-side" style="color: #ffffff;"></i></button></a>
+                    <a href="notifications.html"><button><i class="fa-regular fa-bell fa-xl" style="color: #ffffff;"></i><small>5</small></button></a>
+                    <a href="messages.html"><button><i class="fa-regular fa-envelope fa-xl" style="color: #ffffff;"></i><small>2</small></button></a>
+                    <a href=""><button><i class="fa-regular fa-rectangle-list fa-2xl" style="color: #ffffff;"></i></button></a>
+                    <a href="media/Profile.jpg"><button><i class="fa-regular fa-user fa-xl" style="color: #ffffff;"></i></button></a>
+                    <a href=""><button><img src="media/more.png" alt="" id="icon"></button></a>
+                    <a href="#popup" class="a-post"><button class="post btn-open" id="myButton" onclick="openPopup()"><i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-envira fa-lg" style="color: #ffffff;"></i></button></a>
+                    <a href=""><button class="profile-btn"><img src="media/Profile.jpg" alt=""  id="profile-icon"></button></a>
+                </div>
+            </div>
+            <!--GRID COLUMN LEFT END-->
+
+            <!--GRID COLUMN MIDDLE-1 START-->
+          <div class="middle-1">
+                <div class="nav-bar">
+                    <span>Messages</span>
+                    <div class="setting-msg">
+                    <span><a href=""><i class="fa-solid fa-gear fa-lg" style="color: #ffffff;"></i></a></span>
+                    <span><a href=""><i class="fa-regular fa-envelope fa-lg" style="color: #ffffff;"></i></a></span>
+                    </div>
+                </div>
+                <div class="bar-container">
+                    <div class="search-bar">
+                        <input type="search" placeholder="Search Direct Messages" id="search">
+                        <i class="fa-solid fa-magnifying-glass search-right"></i>
+                    </div>
+                </div>
+
+                <div class="messages-container">
+                    <a href="chats.html">
+                    <div class="friends-container">
+                        <div class="profile-container">
+                            <div class="profile-msg"><img src="media/woman-profile2.jpg" alt="" id="profile-msg"></div>
+                            <div>
+                            <span>Nene stacy Glory</span> <small>@GloryNeh . 1m</small> <span class="dot">...</span>
+                            <p>Hi, Nene..</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="chats.html">
+                    <div class="friends-container">
+                        <div class="profile-container">
+                            <div class="profile-msg"><img src="media/woman-profile2.jpg" alt="" id="profile-msg"></div>
+                            <div>
+                                <span>Nene stacy Glory</span> <small>@GloryNeh . 1m</small> <span class="dot">...</span>
+                                <p>Hi, Nene..</p>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="chats.html">
+                    <div class="friends-container">
+                        <div class="profile-container">
+                            <div class="profile-msg"><img src="media/woman-profile2.jpg" alt="" id="profile-msg"></div>
+                            <div>
+                                <span>Nene stacy Glory</span> <small>@GloryNeh . 1m</small> <span class="dot">...</span>
+                                <p>Hi, Nene..</p>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="chats.html">
+                    <div class="friends-container">
+                        <div class="profile-container">
+                            <div class="profile-msg"><img src="media/woman-profile2.jpg" alt="" id="profile-msg"></div>
+                            <div>
+                                <span>Nene stacy Glory</span> <small>@GloryNeh . 1m</small> <span class="dot">...</span>
+                                <p>Hi, Nene..</p>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="chats.html">
+                    <div class="friends-container">
+                        <div class="profile-container">
+                            <div class="profile-msg"><img src="media/woman-profile2.jpg" alt="" id="profile-msg"></div>
+                            <div>
+                                <span>Nene stacy Glory</span> <small>@GloryNeh . 1m</small> <span class="dot">...</span>
+                                <p>Hi, Nene..</p>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+          
+            <!--GRID COLUMN MIDDLE-1 END-->
+
+            <!--GRID COLUMN MIDDLE-2 START-->
+            <div class="middle-2">
+                <div class="select-content">
+                    <h3>Select a message</h3>
+                    <p>Choose from your existing conversations, start a new one, or just keep swimming.</p>
+                </div>
+                <button><a href="">New message</a></button>
+            </div>
+
+            <!--GRID COLUMN MIDDLE-2 END-->
+
+            <!--GRID COLUMN RIGHT START-->
+            <div class="right">
+            
+            </div>
+            <!--GRID COLUMN RIGHT END-->
+        </div>
+        <!--MESSAGES-MOBILE-RESPONSIVENESS-->
+        <div class="message-grid-container">
+            <div class="top">
+                <div class="nav-container">
+                    <nav class="nav-top">
+                        <div><img src="media/Profile.jpg" alt="" id="profile-mobile"></div>
+                        <div class="message-text"><span>Messages</span></div>
+                        <div><a href=""><button class="nav-setting"><i class="fa-solid fa-gear fa-large" style="color: #ffffff;"></i></button></a></div>
+                    </nav>
+                    <div class="bar-container">
+                        <div class="search-bar">
+                            <input type="search" placeholder="Search Direct Messages" id="search">
+                            <i class="fa-solid fa-magnifying-glass search-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="messages-container">
+                    <a href="">
+                    <div class="friends-container">
+                        <div class="profile-container">
+                            <div class="profile-msg"><img src="media/woman-profile2.jpg" alt="" id="profile-msg"></div>
+                            <div>
+                            <span>Nene stacy Glory</span> <small>@GloryNeh . 1m</small> <span class="dot">...</span>
+                            <p class="p-chat">Hi, Nene..</p>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    
+                    <a href="">
+                    <div class="friends-container">
+                        
+                        <div class="profile-container">
+                            <div class="profile-msg"><img src="media/woman-profile2.jpg" alt="" id="profile-msg"></div>
+                            <div>
+                            <span>Nene stacy Glory</span> <small>@GloryNeh . 1m</small> <span class="dot">...</span>
+                            <p class="p-chat">Hi, Nene..</p>
+                            </div>
+                        </div> 
+                    </div>
+                    </a>
+    
+                    <a href="">
+                    <div class="friends-container">
+    
+                        <div class="profile-container">
+                            <div class="profile-msg"><img src="media/woman-profile2.jpg" alt="" id="profile-msg"></div>
+                            <div>
+                            <span>Nene stacy Glory</span> <small>@GloryNeh . 1m</small> <span class="dot">...</span>
+                            <p class="p-chat">Hi, Nene..</p>
+                            </div>
+                        </div>  
+                    </div>
+                    </a>
+    
+                    <a href="">
+                    <div class="friends-container">
+                        
+                        <div class="profile-container">
+                            <div class="profile-msg"><img src="media/woman-profile2.jpg" alt="" id="profile-msg"></div>
+                            <div>
+                            <span>Nene stacy Glory</span> <small>@GloryNeh . 1m</small> <span class="dot">...</span>
+                            <p class="p-chat">Hi, Nene..</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="bottom">
+                    <nav class="nav-bottom">
+                        <a href="chats.html"><button><i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i></button></a>
+                        <a href="chats.html"><button><i class="fa-solid fa-magnifying-glass fa-xl search-side" style="color: #ffffff;"></i></button></a>
+                        <a href="chats.html"><button><i class="fa-regular fa-rectangle-list fa-2xl" style="color: #ffffff;"></i></button></a>
+                        <a href="chats.html"><button><i class="fa-regular fa-bell fa-xl" style="color: #ffffff;"></i></button></a>
+                        <a href="chats.html"><button><i class="fa-regular fa-envelope fa-xl" style="color: #ffffff;"></i></button></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!--END-->
+    </main>
+    <script>
+        const modal = document.querySelector(".modal");
+        const overlay = document.querySelector(".overlay");
+        const openModalBtn = document.querySelector(".btn-open");
+        const closeModalBtn = document.querySelector(".btn-close");
+
+        const openModal = function () {
+            modal.classList.remove("hidden");
+            overlay.classList.remove("hidden");
+        };
+        openModalBtn.addEventListener("click", openModal);
+        const closeModal = function () {
+            modal.classList.add("hidden");
+            overlay.classList.add("hidden");
+        };
+    closeModalBtn.addEventListener("click", closeModal);
+    overlay.addEventListener("click", closeModal);
+
+    </script>
+</body>
+</html>

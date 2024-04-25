@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://kit.fontawesome.com/dfedbc289c.js" crossorigin="anonymous"></script>
+    <!--<script src="C:\Users\Aoskenni\Documents\Twitter Website\twitter.js"></script>-->
+    <title>Document</title>
+</head>
+<body> 
+    <main>
+
+         <!---------POST POPUP STARTS---------->
+        <div class="overlay hidden"></div>
+        <div class="modal hidden" id="popup">
+        <div class="popup-content">
+            <div class="nav-content">
+                <button id="closePopup" class="closePopup btn-close" onclick="closePopup()"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+                <button class="drafts"><a href="">Drafts</a></button>
+            </div>
+            <div class="post-popup1">
+                <img src="media/Profile.jpg" alt="" id="profile-popup">
+                <a href=""><button>Everyone <i class="fa-solid fa-chevron-down"></i></button></a>
+            </div>
+            <div class="write-something">
+                <textarea name="" id="" cols="60" rows="2" placeholder="What is happening?!"></textarea>
+            </div>
+            <div class="global-options">
+                <button><i class="fa-solid fa-earth-americas"></i>  Everyone can reply</button>
+            </div>
+            <div class="icon-post">
+                <a href=""><i class="fa-regular fa-image"></i></a>
+                <a href=""><div class="gif">GIF</div></a>
+                <a href=""><i class="fa-solid fa-square-poll-horizontal"></i></a>
+                <a href=""><i class="fa-regular fa-face-smile"></i></a>
+                <a href=""><i class="fa-regular fa-calendar-plus"></i></a>
+                <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                <a href=""><button class="post-btn">Post</button></a>
+            </div>
+        </div>
+    </div>
+        <!---------POST POPUP ENDS-------------------->
+
+        <div class="grid-container">
+            <!--GRID COLUMN LEFT START-->
+            <div class="left">
+                <div class="left-container">
+                    <a href="dashboard.html"><button><img src="media/twitter-logo.png" alt="" id="logo"></button></a>
+                    <a href=""><button><i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i><div class="fullstop"></div></button></a>
+                    <a href=""><button><i class="fa-solid fa-magnifying-glass fa-xl search-side" style="color: #ffffff;"></i></button></a>
+                    <a href="notifications.html"><button><i class="fa-regular fa-bell fa-xl" style="color: #ffffff;"></i><small>5</small></button></a>
+                    <a href="messages.html"><button><i class="fa-regular fa-envelope fa-xl" style="color: #ffffff;"></i><small>2</small></button></a>
+                    <a href=""><button><i class="fa-solid fa-star-of-life fa-2xl" style="color: #ffffff;"></i></button></a>
+                    <a href=""><button><i class="fa-regular fa-rectangle-list fa-2xl" style="color: #ffffff;"></i></button></a>
+                    <a href=""><button><i class="fa-solid fa-user-group fa-xl" style="color: #ffffff;"></i></button></a>
+                    <a href="dashboard.html"><button><img src="media/twitter-logo.png" alt="" id="logo"></button></a>
+                    <a href="profile.html"><button><i class="fa-regular fa-user fa-xl" style="color: #ffffff;"></i></button></a>
+                    <a href=""><button><img src="media/more.png" alt="" id="icon"></button></a>
+                    <a href="#popup" class="a-post"><button class="post btn-open" id="myButton" onclick="openPopup()"><i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-envira fa-lg" style="color: #ffffff;"></i></button></a>
+                   
+                    <a href=""><button class="profile-btn"><img src="media/Profile.jpg" alt=""  id="profile-icon"></button></a>
+                </div>
+            </div>
+            <!--GRID COLUMN LEFT END-->
+
+            <!--GRID COLUMN MIDDLE START-->
+          <div class="middle">
+              <div class="nav-container">
+              <nav>
+                <a href=""><button>For You</button></a>
+                <a href=""><button>Following</button></a>
+                <a href=""> <button><div><p>Tech Twitter</p> <img src="media/laptop-icon.png" alt=""></div></button></a>
+                <a href="" class="tech-hide"><button>Tech Remote Jobs & Career Tips</button></a>
+                <!--<a href=""><button>Software Engineering Buddies</button></a>
+                <a href=""><button>Software Engineering</button></a>-->
+              </nav>
+                <div>
+                <a href=""><button class="nav-setting"><i class="fa-solid fa-gear fa-xl" style="color: #ffffff;"></i></button></a>
+                </div>
+              </div>
+                <div class="post-container">
+                    <div class="profile-middle">
+                        <img src="media/Profile.jpg" alt="" id="profile-middle">
+                        <a href=""><button>Everyone <i class="fa-solid fa-chevron-down"></i></button></a>
+                    </div>
+                    <div class="write-something">
+                        <textarea name="" id="" cols="60" rows="2" placeholder="What is happening?!"></textarea>
+                    </div>
+                    <div class="global-options">
+                        <button><i class="fa-solid fa-earth-americas"></i>  Everyone can reply</button>
+                    </div>
+                    <div class="icon-post">
+                        <a href=""><i class="fa-regular fa-image"></i></a>
+                        <a href=""><div class="gif">GIF</div></a>
+                        <a href=""><i class="fa-solid fa-square-poll-horizontal"></i></a>
+                        <a href=""><i class="fa-regular fa-face-smile"></i></a>
+                        <a href=""><i class="fa-regular fa-calendar-plus"></i></a>
+                        <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                        <a href=""><button class="post-btn">Post</button></a>
+                    </div>
+                    <div class="show-posts">
+                        <a href="">Show 1,320 posts</a>
+                    </div>
+                    <article>
+                        <div class="post-photo">
+                            <img src="media/Profile.jpg" alt="" id="post-photo">
+                        </div>
+                        <div class="profile-name-time">
+                            <span>Fascinating</span>
+                            <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                            <span>@realFacts</span>
+                            <span>.</span>
+                            <span>3h</span>
+                            <span>...</span>
+                        </div>
+                        <div class="post-text">
+                            <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                            from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                            This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                            </span>
+                        </div>
+                        <div class="img-2">
+                        <img src="media/Denmark.jpg" alt="" id="post-img">
+                        <img src="media/Norway.jpg" alt="" id="post-img">
+                        </div>
+                        <div class="icon-bottom">
+                            <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                            <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                            <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                            <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                            <div class="bookmark-share">
+                            <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                            <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="post-photo">
+                            <img src="media/Profile.jpg" alt="" id="post-photo">
+                        </div>
+                        <div class="profile-name-time">
+                            <span>Fascinating</span>
+                            <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                            <span>@realFacts</span>
+                            <span>.</span>
+                            <span>3h</span>
+                            <span>...</span>
+                        </div>
+                        <div class="post-text">
+                            <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                            from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                            This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                            </span>
+                        </div>
+                        <div class="img-2">
+                        <img src="media/Denmark.jpg" alt="" id="post-img">
+                        <img src="media/Norway.jpg" alt="" id="post-img">
+                        </div>
+                        <div class="icon-bottom">
+                            <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                            <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                            <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                            <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                            <div class="bookmark-share">
+                            <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                            <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article>
+                        <div class="post-photo">
+                            <img src="media/Profile.jpg" alt="" id="post-photo">
+                        </div>
+                        <div class="profile-name-time">
+                            <span>Fascinating</span>
+                            <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                            <span>@realFacts</span>
+                            <span>.</span>
+                            <span>3h</span>
+                            <span>...</span>
+                        </div>
+                        <div class="post-text">
+                            <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                            from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                            This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                            </span>
+                        </div>
+                        <div class="img-2">
+                        <img src="media/Denmark.jpg" alt="" id="post-img">
+                        <img src="media/Norway.jpg" alt="" id="post-img">
+                        </div>
+                        <div class="icon-bottom">
+                            <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                            <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                            <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                            <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                            <div class="bookmark-share">
+                            <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                            <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="post-photo">
+                            <img src="media/Profile.jpg" alt="" id="post-photo">
+                        </div>
+                        <div class="profile-name-time">
+                            <span>Fascinating</span>
+                            <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                            <span>@realFacts</span>
+                            <span>.</span>
+                            <span>3h</span>
+                            <span>...</span>
+                        </div>
+                        <div class="post-text">
+                            <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                            from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                            This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                            </span>
+                        </div>
+                        <div class="img-2">
+                        <img src="media/Denmark.jpg" alt="" id="post-img">
+                        <img src="media/Norway.jpg" alt="" id="post-img">
+                        </div>
+                        <div class="icon-bottom">
+                            <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                            <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                            <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                            <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                            <div class="bookmark-share">
+                            <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                            <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="post-photo">
+                            <img src="media/Profile.jpg" alt="" id="post-photo">
+                        </div>
+                        <div class="profile-name-time">
+                            <span>Fascinating</span>
+                            <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                            <span>@realFacts</span>
+                            <span>.</span>
+                            <span>3h</span>
+                            <span>...</span>
+                        </div>
+                        <div class="post-text">
+                            <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                            from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                            This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                            </span>
+                        </div>
+                        <div class="img-2">
+                        <img src="media/Denmark.jpg" alt="" id="post-img">
+                        <img src="media/Norway.jpg" alt="" id="post-img">
+                        </div>
+                        <div class="icon-bottom">
+                            <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                            <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                            <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                            <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                            <div class="bookmark-share">
+                            <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                            <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="post-photo">
+                            <img src="media/Profile.jpg" alt="" id="post-photo">
+                        </div>
+                        <div class="profile-name-time">
+                            <span>Fascinating</span>
+                            <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                            <span>@realFacts</span>
+                            <span>.</span>
+                            <span>3h</span>
+                            <span>...</span>
+                        </div>
+                        <div class="post-text">
+                            <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                            from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                            This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                            </span>
+                        </div>
+                        <div class="img-2">
+                        <img src="media/Denmark.jpg" alt="" id="post-img">
+                        <img src="media/Norway.jpg" alt="" id="post-img">
+                        </div>
+                        <div class="icon-bottom">
+                            <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                            <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                            <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                            <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                            <div class="bookmark-share">
+                            <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                            <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="post-photo">
+                            <img src="media/Profile.jpg" alt="" id="post-photo">
+                        </div>
+                        <div class="profile-name-time">
+                            <span>Fascinating</span>
+                            <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                            <span>@realFacts</span>
+                            <span>.</span>
+                            <span>3h</span>
+                            <span>...</span>
+                        </div>
+                        <div class="post-text">
+                            <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                            from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                            This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                            </span>
+                        </div>
+                        <div class="img-2">
+                        <img src="media/Denmark.jpg" alt="" id="post-img">
+                        <img src="media/Norway.jpg" alt="" id="post-img">
+                        </div>
+                        <div class="icon-bottom">
+                            <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                            <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                            <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                            <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                            <div class="bookmark-share">
+                            <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                            <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="post-photo">
+                            <img src="media/Profile.jpg" alt="" id="post-photo">
+                        </div>
+                        <div class="profile-name-time">
+                            <span>Fascinating</span>
+                            <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                            <span>@realFacts</span>
+                            <span>.</span>
+                            <span>3h</span>
+                            <span>...</span>
+                        </div>
+                        <div class="post-text">
+                            <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                            from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                            This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                            </span>
+                        </div>
+                        <div class="img-2">
+                        <img src="media/Denmark.jpg" alt="" id="post-img">
+                        <img src="media/Norway.jpg" alt="" id="post-img">
+                        </div>
+                        <div class="icon-bottom">
+                            <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                            <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                            <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                            <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                            <div class="bookmark-share">
+                            <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                            <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="post-photo">
+                            <img src="media/Profile.jpg" alt="" id="post-photo">
+                        </div>
+                        <div class="profile-name-time">
+                            <span>Fascinating</span>
+                            <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                            <span>@realFacts</span>
+                            <span>.</span>
+                            <span>3h</span>
+                            <span>...</span>
+                        </div>
+                        <div class="post-text">
+                            <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                            from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                            This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                            </span>
+                        </div>
+                        <div class="img-2">
+                        <img src="media/Denmark.jpg" alt="" id="post-img">
+                        <img src="media/Norway.jpg" alt="" id="post-img">
+                        </div>
+                        <div class="icon-bottom">
+                            <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                            <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                            <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                            <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                            <div class="bookmark-share">
+                            <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                            <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article>
+                        <div class="post-photo">
+                            <img src="media/Profile.jpg" alt="" id="post-photo">
+                        </div>
+                        <div class="profile-name-time">
+                            <span>Fascinating</span>
+                            <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                            <span>@realFacts</span>
+                            <span>.</span>
+                            <span>3h</span>
+                            <span>...</span>
+                        </div>
+                        <div class="post-text">
+                            <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                            from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                            This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                            </span>
+                        </div>
+                        <div class="img-2">
+                        <img src="media/Denmark.jpg" alt="" id="post-img">
+                        <img src="media/Norway.jpg" alt="" id="post-img">
+                        </div>
+                        <div class="icon-bottom">
+                            <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                            <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                            <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                            <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                            <div class="bookmark-share">
+                            <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                            <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="post-photo">
+                            <img src="media/Profile.jpg" alt="" id="post-photo">
+                        </div>
+                        <div class="profile-name-time">
+                            <span>Fascinating</span>
+                            <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                            <span>@realFacts</span>
+                            <span>.</span>
+                            <span>3h</span>
+                            <span>...</span>
+                        </div>
+                        <div class="post-text">
+                            <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                            from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                            This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                            </span>
+                        </div>
+                        <div class="img-2">
+                        <img src="media/Denmark.jpg" alt="" id="post-img">
+                        <img src="media/Norway.jpg" alt="" id="post-img">
+                        </div>
+                        <div class="icon-bottom">
+                            <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                            <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                            <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                            <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                            <div class="bookmark-share">
+                            <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                            <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="post-photo">
+                            <img src="media/Profile.jpg" alt="" id="post-photo">
+                        </div>
+                        <div class="profile-name-time">
+                            <span>Fascinating</span>
+                            <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                            <span>@realFacts</span>
+                            <span>.</span>
+                            <span>3h</span>
+                            <span>...</span>
+                        </div>
+                        <div class="post-text">
+                            <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                            from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                            This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                            </span>
+                        </div>
+                        <div class="img-2">
+                        <img src="media/Denmark.jpg" alt="" id="post-img">
+                        <img src="media/Norway.jpg" alt="" id="post-img">
+                        </div>
+                        <div class="icon-bottom">
+                            <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                            <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                            <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                            <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                            <div class="bookmark-share">
+                            <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                            <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="post-photo">
+                            <img src="media/Profile.jpg" alt="" id="post-photo">
+                        </div>
+                        <div class="profile-name-time">
+                            <span>Fascinating</span>
+                            <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                            <span>@realFacts</span>
+                            <span>.</span>
+                            <span>3h</span>
+                            <span>...</span>
+                        </div>
+                        <div class="post-text">
+                            <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                            from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                            This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                            </span>
+                        </div>
+                        <div class="img-2">
+                        <img src="media/Denmark.jpg" alt="" id="post-img">
+                        <img src="media/Norway.jpg" alt="" id="post-img">
+                        </div>
+                        <div class="icon-bottom">
+                            <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                            <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                            <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                            <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                            <div class="bookmark-share">
+                            <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                            <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+           </div>
+            <!--GRID COLUMN MIDDLE END-->
+
+            <!--GRID COLUMN RIGHT START-->
+            <div class="right">
+                
+                <div class="bar-container">
+                    <div class="search-bar">
+                        <input type="search" placeholder="Search" id="search">
+                        <i class="fa-solid fa-magnifying-glass search-right"></i>
+                    </div>
+                </div>
+                <div class="subscribe">
+                    <span class="subscribe-span">Subscribe to Premium</span>
+                    <p class="subscribe-p">Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                    <button class="subscribe-btn"><a href="">Subscribe</a></button>
+                </div>
+                <div class="trends">
+                    <div class="trends-content">
+                        <span>Trends For You</span>
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+                        
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+                        
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+                        <div class="trends-hover trend-btn">
+                        <a href="">Show more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="follow">
+                    <span>Who to follow</span>
+                    <div class="follow-content">
+                        <div><img src="media/woman-profile2.jpg" alt="" id="follow-photo"></div>
+                        <div class="follow-profile"><span>Doverun</span><p>@doverun</p></div>
+                        <div class="follow-btn"><button id="follow-btn"><a href="">Follow</a></button></div>
+                    </div>
+
+                    <div class="follow-content">
+                        <div><img src="media/woman-profile2.jpg" alt="" id="follow-photo"></div>
+                        <div class="follow-profile"><span>Doverun</span><p>@doverun</p></div>
+                        <div class="follow-btn"><button id="follow-btn"><a href="">Follow</a></button></div>
+                    </div>
+
+                    <div class="follow-content">
+                        <div><img src="media/woman-profile2.jpg" alt="" id="follow-photo"></div>
+                        <div class="follow-profile"><span>Doverun</span><p>@doverun</p></div>
+                        <div class="follow-btn"><button id="follow-btn"><a href="">Follow</a></button></div>
+                    </div>
+                    <div class="follow-content">
+                        <a href="">Show more</a>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="footer">
+                    <a href="">Terms of Service</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Cookie Policy</a>
+                    <a href="">Accessibility</a>
+                    <a href="">Ads info</a>
+                    <a href="">More...</a>
+                    <a href="">© 2023 X Corp.</a>
+                </div>
+            
+            </div>
+            <!--GRID COLUMN RIGHT END-->
+        </div>
+        <!------------------MOBILE RESPONSIVENESS CODE STARTS----------------->
+        
+    <div class="grid-container-mobile">
+        <div class="top">
+            <div class="nav-container">
+                <nav>
+                    <div><img src="media/Profile.jpg" alt="" id="profile-mobile"></div>
+                    <div><img src="media/twitter-logo.png" alt="" id="mobile-logo"></div>
+                    <div><a href=""><button class="nav-setting"><i class="fa-solid fa-gear fa-large" style="color: #ffffff;"></i></button></a></div>
+                </nav>
+                <div class="groups">
+                    <a href=""><button>For You</button></a>
+                    <a href=""><button>Following</button></a>
+                    <a href=""> <button><div class="laptop"><p>Tech Twitter</p> <img src="media/laptop-icon.png" alt="" id="laptop"></div></button></a>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="show"><a href="">Show 1,155 posts</a></div>
+            <article>
+                <div class="post-photo">
+                    <img src="media/Profile.jpg" alt="" id="post-photo">
+                </div>
+                <div class="profile-name-time">
+                    <span>Fascinating</span>
+                    <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                    <span>@realFacts</span>
+                    <span>.</span>
+                    <span>3h</span>
+                    <span>...</span>
+                </div>
+                <div class="post-text">
+                    <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                    from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                    This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                    </span>
+                </div>
+                <div class="img-2">
+                <img src="media/Denmark.jpg" alt="" id="post-img">
+                <img src="media/Norway.jpg" alt="" id="post-img">
+                </div>
+                <div class="icon-bottom">
+                    <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                    <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                    <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                    <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                    <div class="bookmark-share">
+                    <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                    <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="post-photo">
+                    <img src="media/Profile.jpg" alt="" id="post-photo">
+                </div>
+                <div class="profile-name-time">
+                    <span>Fascinating</span>
+                    <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                    <span>@realFacts</span>
+                    <span>.</span>
+                    <span>3h</span>
+                    <span>...</span>
+                </div>
+                <div class="post-text">
+                    <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                    from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                    This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                    </span>
+                </div>
+                <div class="img-2">
+                <img src="media/Denmark.jpg" alt="" id="post-img">
+                <img src="media/Norway.jpg" alt="" id="post-img">
+                </div>
+                <div class="icon-bottom">
+                    <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                    <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                    <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                    <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                    <div class="bookmark-share">
+                    <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                    <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="post-photo">
+                    <img src="media/Profile.jpg" alt="" id="post-photo">
+                </div>
+                <div class="profile-name-time">
+                    <span>Fascinating</span>
+                    <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                    <span>@realFacts</span>
+                    <span>.</span>
+                    <span>3h</span>
+                    <span>...</span>
+                </div>
+                <div class="post-text">
+                    <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                    from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                    This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                    </span>
+                </div>
+                <div class="img-2">
+                <img src="media/Denmark.jpg" alt="" id="post-img">
+                <img src="media/Norway.jpg" alt="" id="post-img">
+                </div>
+                <div class="icon-bottom">
+                    <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                    <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                    <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                    <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                    <div class="bookmark-share">
+                    <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                    <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="post-photo">
+                    <img src="media/Profile.jpg" alt="" id="post-photo">
+                </div>
+                <div class="profile-name-time">
+                    <span>Fascinating</span>
+                    <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                    <span>@realFacts</span>
+                    <span>.</span>
+                    <span>3h</span>
+                    <span>...</span>
+                </div>
+                <div class="post-text">
+                    <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                    from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                    This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                    </span>
+                </div>
+                <div class="img-2">
+                <img src="media/Denmark.jpg" alt="" id="post-img">
+                <img src="media/Norway.jpg" alt="" id="post-img">
+                </div>
+                <div class="icon-bottom">
+                    <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                    <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                    <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                    <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                    <div class="bookmark-share">
+                    <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                    <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="post-photo">
+                    <img src="media/Profile.jpg" alt="" id="post-photo">
+                </div>
+                <div class="profile-name-time">
+                    <span>Fascinating</span>
+                    <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                    <span>@realFacts</span>
+                    <span>.</span>
+                    <span>3h</span>
+                    <span>...</span>
+                </div>
+                <div class="post-text">
+                    <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                    from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                    This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                    </span>
+                </div>
+                <div class="img-2">
+                <img src="media/Denmark.jpg" alt="" id="post-img">
+                <img src="media/Norway.jpg" alt="" id="post-img">
+                </div>
+                <div class="icon-bottom">
+                    <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                    <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                    <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                    <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                    <div class="bookmark-share">
+                    <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                    <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="post-photo">
+                    <img src="media/Profile.jpg" alt="" id="post-photo">
+                </div>
+                <div class="profile-name-time">
+                    <span>Fascinating</span>
+                    <div class="badge"><img src="media/badge.svg" alt="" id="badge"></div>
+                    <span>@realFacts</span>
+                    <span>.</span>
+                    <span>3h</span>
+                    <span>...</span>
+                </div>
+                <div class="post-text">
+                    <span>In certain Nordic countries like Denmark, Finland, Norway, and Sweden, a long-standing tradition 
+                    from the early 20th century involves allowing babies to nap outdoors during cold weather.
+                    This custom is based on the belief that exposing infants to fresh air, even in freezing…
+                    </span>
+                </div>
+                <div class="img-2">
+                <img src="media/Denmark.jpg" alt="" id="post-img">
+                <img src="media/Norway.jpg" alt="" id="post-img">
+                </div>
+                <div class="icon-bottom">
+                    <div class="icon-no"><div class="circle-icon rebecca-blue"><i class="fa-regular fa-comment" style="color: #71767b;"></i></div>   <span class="retweet-no rebecca-blue-no">3.1k</span></div>
+                    <div class="retweet icon-no"><div class="circle-icon green"><img src="media/retweet.svg" alt="" id="retweet"></div><span class="retweet-no green-no">35k</span></div>
+                    <div class="icon-no"><div class="circle-icon pink"><i class="fa-regular fa-heart" style="color: #71767b;"></i></div>   <span class="retweet-no pink-no">268k</span></div>
+                    <div class="icon-no"><div class="circle-icon blue"><i class="fa-solid fa-chart-simple" style="color: #71767b;"></i></div>   <span class="retweet-no blue-no">27m</span></div>
+                    <div class="bookmark-share">
+                    <div class="circle-icon rebecca-blue"><i class="fa-regular fa-bookmark" style="color: #71767b;"></i></div>
+                    <div class="circle-icon rebecca-blue"><i class="fa-solid fa-arrow-up-from-bracket" style="color: #71767b;"></i></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="bottom">
+            <nav class="nav-bottom">
+                <a href=""><button><i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i></button></a>
+                <a href=""><button><i class="fa-solid fa-magnifying-glass fa-xl search-side" style="color: #ffffff;"></i></button></a>
+                <a href=""><button><i class="fa-regular fa-rectangle-list fa-2xl" style="color: #ffffff;"></i></button></a>
+                <a href=""><button><i class="fa-regular fa-bell fa-xl" style="color: #ffffff;"></i></button></a>
+                <a href=""><button><i class="fa-regular fa-envelope fa-xl" style="color: #ffffff;"></i></button></a>
+            </nav>
+        </div>
+    </div>
+    <!------------------MOBILE RESPONSIVENESS CODE ENDS------------------->
+
+    </main> 
+
+
+    <script>
+        const modal = document.querySelector(".modal");
+        const overlay = document.querySelector(".overlay");
+        const openModalBtn = document.querySelector(".btn-open");
+        const closeModalBtn = document.querySelector(".btn-close");
+
+        const openModal = function () {
+            modal.classList.remove("hidden");
+            overlay.classList.remove("hidden");
+        };
+        openModalBtn.addEventListener("click", openModal);
+        const closeModal = function () {
+            modal.classList.add("hidden");
+            overlay.classList.add("hidden");
+        };
+    closeModalBtn.addEventListener("click", closeModal);
+    overlay.addEventListener("click", closeModal);
+
+    </script>
+</body>
+</html>

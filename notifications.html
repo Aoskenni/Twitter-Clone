@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="notifications.css">
+    <script src="https://kit.fontawesome.com/dfedbc289c.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+
+        <!---------POST POPUP STARTS---------->
+        <div class="overlay hidden"></div>
+        <div class="modal hidden" id="popup">
+        <div class="popup-content">
+            <div class="nav-content">
+                <button id="closePopup" class="closePopup btn-close" onclick="closePopup()"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+                <button class="drafts"><a href="">Drafts</a></button>
+            </div>
+            <div class="post-popup1">
+                <img src="media/Profile.jpg" alt="" id="profile-popup">
+                <a href=""><button>Everyone <i class="fa-solid fa-chevron-down"></i></button></a>
+            </div>
+            <div class="write-something">
+                <textarea name="" id="" cols="60" rows="2" placeholder="What is happening?!"></textarea>
+            </div>
+            <div class="global-options">
+                <button><i class="fa-solid fa-earth-americas"></i>  Everyone can reply</button>
+            </div>
+            <div class="icon-post">
+                <a href=""><i class="fa-regular fa-image"></i></a>
+                <a href=""><div class="gif">GIF</div></a>
+                <a href=""><i class="fa-solid fa-square-poll-horizontal"></i></a>
+                <a href=""><i class="fa-regular fa-face-smile"></i></a>
+                <a href=""><i class="fa-regular fa-calendar-plus"></i></a>
+                <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                <a href=""><button class="post-btn">Post</button></a>
+            </div>
+        </div>
+    </div>
+        <!---------POST POPUP ENDS-------------------->
+
+
+        <div class="grid-container">
+            <!--GRID COLUMN LEFT START-->
+            <div class="left">
+                <div class="left-container">
+                    <a href="dashboard.html"><button><img src="media/twitter-logo.png" alt="" id="logo"></button></a>
+                    <a href=""><button><i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i><div class="fullstop"></div></button></a>
+                    <a href=""><button><i class="fa-solid fa-magnifying-glass fa-xl search-side" style="color: #ffffff;"></i></button></a>
+                    <a href="notifications.html"><button><i class="fa-regular fa-bell fa-xl" style="color: #ffffff;"></i><small>5</small></button></a>
+                    <a href="messages.html"><button><i class="fa-regular fa-envelope fa-xl" style="color: #ffffff;"></i><small>2</small></button></a>
+                    <a href=""><button><i class="fa-solid fa-star-of-life fa-2xl" style="color: #ffffff;"></i></button></a>
+                    <a href=""><button><i class="fa-regular fa-rectangle-list fa-2xl" style="color: #ffffff;"></i></button></a>
+                    <a href=""><button><i class="fa-solid fa-user-group fa-xl" style="color: #ffffff;"></i></button></a>
+                    <a href="dashboard.html"><button><img src="media/twitter-logo.png" alt="" id="logo"></button></a>
+                    <a href="profile.html"><button><i class="fa-regular fa-user fa-xl" style="color: #ffffff;"></i></button></a>
+                    <a href=""><button><img src="media/more.png" alt="" id="icon"></button></a>
+                    <a href="#popup" class="a-post"><button class="post btn-open" id="myButton" onclick="openPopup()"><i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-envira fa-lg" style="color: #ffffff;"></i></button></a>
+                    <a href=""><button class="profile-btn"><img src="media/Profile.jpg" alt=""  id="profile-icon"></button></a>
+                </div>
+            </div>
+            <!--GRID COLUMN LEFT END-->
+
+            <!--GRID COLUMN MIDDLE START-->
+          <div class="middle">
+              <div class="nav-container">
+                    <div class="nav1"><span>Notifications</span><a href=""><button class="nav-setting"><i class="fa-solid fa-gear fa-xl" style="color: #ffffff;"></i></button></a></div>
+              
+                    <div class="nav2">
+                        <button class="buttons-nav"><a href="">All</a></button>
+                        <button class="buttons-nav"><a href="">Verified</a></button>
+                        <button class="buttons-nav"><a href="">Mentions</a></button>
+                    </div>
+               </div>
+               <div>
+                <div class="group-flex"><span>Tech Remote Jobs & Career Tips</span><small>...</small></div>
+                <div class="notifications-container">
+                    <i class="fa-solid fa-user-group fa-xl" style="color: #1D9BF0;"></i>
+                    <div><img src="media/notification-logo.png" alt=""></div>
+                </div>
+                <div class="notification-content">
+                    <span>Innova posted</span>
+                    <p>Hey it's almost 2024</p> 
+                    <p>Another 365 days ahead to set goals<i class="fa-solid fa-face-smile" style="color: #c8c22d;"></i></p>
+                
+                </div>
+
+                <div class="divider-notification">
+                <div class="notifications-container">
+                    <i class="fa-solid fa-user fa-xl" style="color: #1D9BF0;"></i>
+                    <div><img src="media/Male.jpg" alt=""></div>
+                </div>
+                <div class="notification-content">
+                    <span>Just _Ayo followed you</span>
+                </div>
+                
+                <div class="logo-flex">
+                    <div><img src="media/twitter-logo.png" alt="" id="notification-logo"></div>
+                    <span><a href="">There was a login to your account @Aoskenni from a new device on 14 Dec 2023. Review it now.</a></span>
+                </div>
+                </div>
+               </div>
+           </div>
+            <!--GRID COLUMN MIDDLE END-->
+
+            <!--GRID COLUMN RIGHT START-->
+            <div class="right">
+                
+                <div class="bar-container">
+                    <div class="search-bar">
+                        <input type="search" placeholder="Search" id="search">
+                        <i class="fa-solid fa-magnifying-glass search-right"></i>
+                    </div>
+                </div>
+                
+                <div class="trends">
+                    <div class="trends-content">
+                        <span>Trends For You</span>
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+                        
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+                        
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+
+                        <div class="trends-hover">
+                        <div class="trends-flex"><span>Trending in Nigeria</span> <small>...</small></div>
+                        <div><span>CGPA</span></div>
+                        <div><small>7,221 posts</small></div>
+                        </div>
+                        <div class="trends-hover trend-btn">
+                        <a href="">Show more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="follow">
+                    <span>Who to follow</span>
+                    <div class="follow-content">
+                        <div><img src="media/woman-profile2.jpg" alt="" id="follow-photo"></div>
+                        <div class="follow-profile"><span>Doverun</span><p>@doverun</p></div>
+                        <div class="follow-btn"><button id="follow-btn"><a href="">Follow</a></button></div>
+                    </div>
+
+                    <div class="follow-content">
+                        <div><img src="media/woman-profile2.jpg" alt="" id="follow-photo"></div>
+                        <div class="follow-profile"><span>Doverun</span><p>@doverun</p></div>
+                        <div class="follow-btn"><button id="follow-btn"><a href="">Follow</a></button></div>
+                    </div>
+
+                    <div class="follow-content">
+                        <div><img src="media/woman-profile2.jpg" alt="" id="follow-photo"></div>
+                        <div class="follow-profile"><span>Doverun</span><p>@doverun</p></div>
+                        <div class="follow-btn"><button id="follow-btn"><a href="">Follow</a></button></div>
+                    </div>
+                    <div class="follow-content">
+                        <a href="">Show more</a>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="footer">
+                    <a href="">Terms of Service</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Cookie Policy</a>
+                    <a href="">Accessibility</a>
+                    <a href="">Ads info</a>
+                    <a href="">More...</a>
+                    <a href="">© 2023 X Corp.</a>
+                </div>
+            
+            </div>
+            <!--GRID COLUMN RIGHT END-->
+        </div>
+    </main>
+
+    <script>
+        const modal = document.querySelector(".modal");
+        const overlay = document.querySelector(".overlay");
+        const openModalBtn = document.querySelector(".btn-open");
+        const closeModalBtn = document.querySelector(".btn-close");
+
+        const openModal = function () {
+            modal.classList.remove("hidden");
+            overlay.classList.remove("hidden");
+        };
+        openModalBtn.addEventListener("click", openModal);
+        const closeModal = function () {
+            modal.classList.add("hidden");
+            overlay.classList.add("hidden");
+        };
+    closeModalBtn.addEventListener("click", closeModal);
+    overlay.addEventListener("click", closeModal);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chats.css">
+    <script src="https://kit.fontawesome.com/dfedbc289c.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <!---------POST POPUP STARTS---------->
+        <div class="overlay hidden"></div>
+        <div class="modal hidden" id="popup">
+        <div class="popup-content">
+            <div class="nav-content">
+                <button id="closePopup" class="closePopup btn-close" onclick="closePopup()"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+                <button class="drafts"><a href="">Drafts</a></button>
+            </div>
+            <div class="post-popup1">
+                <img src="media/Profile.jpg" alt="" id="profile-popup">
+                <a href=""><button>Everyone <i class="fa-solid fa-chevron-down"></i></button></a>
+            </div>
+            <div class="write-something">
+                <textarea name="" id="" cols="60" rows="2" placeholder="What is happening?!"></textarea>
+            </div>
+            <div class="global-options">
+                <button><i class="fa-solid fa-earth-americas"></i>  Everyone can reply</button>
+            </div>
+            <div class="icon-post">
+                <a href=""><i class="fa-regular fa-image"></i></a>
+                <a href=""><div class="gif">GIF</div></a>
+                <a href=""><i class="fa-solid fa-square-poll-horizontal"></i></a>
+                <a href=""><i class="fa-regular fa-face-smile"></i></a>
+                <a href=""><i class="fa-regular fa-calendar-plus"></i></a>
+                <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                <a href=""><button class="post-btn">Post</button></a>
+            </div>
+        </div>
+    </div>
+        <!---------POST POPUP ENDS-------------------->
+
+
+        <div class="grid-container">
+            <!--GRID COLUMN LEFT START-->
+            <div class="left">
+                <div class="left-container">
+                    <a href="https://facebook.com"><button><img src="media/twitter-logo.png" alt="" id="logo"></button></a>
+                    <a href=""><button><i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i><div class="fullstop"></div></button></a>
+                    <a href=""><button><i class="fa-solid fa-magnifying-glass fa-xl search-side" style="color: #ffffff;"></i></button></a>
+                    <a href=""><button><i class="fa-regular fa-bell fa-xl" style="color: #ffffff;"></i><small>5</small></button></a>
+                    <a href=""><button><i class="fa-regular fa-envelope fa-xl" style="color: #ffffff;"></i><small>2</small></button></a>
+                    <a href=""><button><i class="fa-regular fa-rectangle-list fa-2xl" style="color: #ffffff;"></i></button></a>
+                    <a href=""><button><i class="fa-regular fa-user fa-xl" style="color: #ffffff;"></i></button></a>
+                    <a href=""><button><img src="media/more.png" alt="" id="icon"></button></a>
+                    <a href="#popup" class="a-post"><button class="post btn-open" id="myButton" onclick="openPopup()"><i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-envira fa-lg" style="color: #ffffff;"></i></button></a>
+                    <a href=""><button class="profile-btn"><img src="media/Profile.jpg" alt=""  id="profile-icon"></button></a>
+                </div>
+            </div>
+            <!--GRID COLUMN LEFT END-->
+
+            <!--GRID COLUMN MIDDLE-1 START-->
+          <div class="middle-1">
+                <div class="nav-bar">
+                    <span>Messages</span>
+                    <div class="setting-msg">
+                    <span><a href=""><i class="fa-solid fa-gear fa-lg" style="color: #ffffff;"></i></a></span>
+                    <span><a href=""><i class="fa-regular fa-envelope fa-lg" style="color: #ffffff;"></i></a></span>
+                    </div>
+                </div>
+                <div class="bar-container">
+                    <div class="search-bar">
+                        <input type="search" placeholder="Search Direct Messages" id="search">
+                        <i class="fa-solid fa-magnifying-glass search-right"></i>
+                    </div>
+                </div>
+
+                <div class="messages-container">
+                    <div class="friends-container">
+                        <div class="profile-container">
+                            <div class="profile-msg"><img src="media/woman-profile2.jpg" alt="" id="profile-msg"></div>
+                            <div>
+                            <span>Nene stacy Glory</span> <small>@GloryNeh . 1m</small> <span class="dot">...</span>
+                            <p>Hi, Nene..</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friends-container">
+                        <div class="profile-container">
+                            <div class="profile-msg"><img src="media/woman-profile2.jpg" alt="" id="profile-msg"></div>
+                            <div>
+                                <span>Nene stacy Glory</span> <small>@GloryNeh . 1m</small> <span class="dot">...</span>
+                                <p>Hi, Nene..</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friends-container">
+                        <div class="profile-container">
+                            <div class="profile-msg"><img src="media/woman-profile2.jpg" alt="" id="profile-msg"></div>
+                            <div>
+                                <span>Nene stacy Glory</span> <small>@GloryNeh . 1m</small> <span class="dot">...</span>
+                                <p>Hi, Nene..</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friends-container">
+                        <div class="profile-container">
+                            <div class="profile-msg"><img src="media/woman-profile2.jpg" alt="" id="profile-msg"></div>
+                            <div>
+                                <span>Nene stacy Glory</span> <small>@GloryNeh . 1m</small> <span class="dot">...</span>
+                                <p>Hi, Nene..</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friends-container">
+                        <div class="profile-container">
+                            <div class="profile-msg"><img src="media/woman-profile2.jpg" alt="" id="profile-msg"></div>
+                            <div>
+                                <span>Nene stacy Glory</span> <small>@GloryNeh . 1m</small> <span class="dot">...</span>
+                                <p>Hi, Nene..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+          
+            <!--GRID COLUMN MIDDLE-1 END-->
+
+            <!--GRID COLUMN MIDDLE-2 START-->
+            <div class="middle-2">
+                <div class="chat-nav"><span>Nene Stacy Glory</span> <i class="fa-solid fa-circle-info" style="color: #ffffff;"></i></div>
+            
+                <div class="chat-profile">
+                    <div class="chat-photo"><img src="media/Profile.jpg" alt="" id="chat-photo"></div>
+                    <span>Nene Stacy Glory</span>
+                    <span>@GloryNeh</span>
+                    <div class="p-small">
+                        <p>programmer || poet|| cybersecurity student||😁</p>
+                        <small>Joined February 2022·50 Followers</small>
+                        <small>Not followed by anyone you’re following</small>
+                    </div>
+                </div>
+                <div class="conversation">
+                    <div class="conversation-flex sender-chat">
+                        <button id="sender">Hi</button>
+                        <small>Thu 5:35pm</small>
+                    </div>
+                    <div class="conversation-flex reply-chat">
+                        <button id="reply">Hello, What's up</button>
+                        <small>Thu 5:38pm</small>
+                    </div>
+                    <div class="conversation-flex sender-chat">
+                        <button id="sender">Nothing much</button>
+                        <small>Thu 5:42pm</small>
+                    </div>
+                </div>
+                <div class="message-fixed">
+                <div class="text-message">
+                    <input type="text" placeholder="Start a new message">
+                    <div class="icon-chat">
+                    <a href=""><i class="fa-regular fa-image"></i></a>
+                    <a href=""><div class="gif">GIF</div></a>
+                    <a href=""><i class="fa-regular fa-face-smile"></i></a>
+                    </div>
+                    <i class="fa-solid fa-paper-plane fa-rotate-90" style="color:  rgba(120, 86, 255, 0.3);"></i>
+                </div>
+                </div>
+            </div>
+
+            <!--GRID COLUMN MIDDLE-2 END-->
+
+            <!--GRID COLUMN RIGHT START-->
+            <div class="right">
+            
+            </div>
+            <!--GRID COLUMN RIGHT END-->
+        </div>
+
+        <!------------------MOBILE RESPONSIVENESS---------->
+        
+    </main>
+    <script>
+        const modal = document.querySelector(".modal");
+        const overlay = document.querySelector(".overlay");
+        const openModalBtn = document.querySelector(".btn-open");
+        const closeModalBtn = document.querySelector(".btn-close");
+
+        const openModal = function () {
+            modal.classList.remove("hidden");
+            overlay.classList.remove("hidden");
+        };
+        openModalBtn.addEventListener("click", openModal);
+        const closeModal = function () {
+            modal.classList.add("hidden");
+            overlay.classList.add("hidden");
+        };
+    closeModalBtn.addEventListener("click", closeModal);
+    overlay.addEventListener("click", closeModal);
+
+    </script>
+</body>
+</html>
